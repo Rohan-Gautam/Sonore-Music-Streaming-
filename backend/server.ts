@@ -3,6 +3,9 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import path from 'path';
 import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import { registerUser } from './routes/register';
+import { loginUser } from './routes/login';
 
 /**
  * Initialize environment variables
@@ -32,6 +35,7 @@ const FRONTEND_URL: string = process.env.FRONTEND_URL || 'http://localhost:5173'
  */
 app.use(cors({ origin: FRONTEND_URL }));
 app.use(express.json());
+app.use(cookieParser(process.env.COOKIE_SECRET || 'your_cookie_secret'));
 app.use(express.static(path.join(__dirname, '../../frontend/dist')));
 
 /**
@@ -39,6 +43,8 @@ app.use(express.static(path.join(__dirname, '../../frontend/dist')));
  * Connects to the database before starting the server
  * Includes URI validation for robustness
  */
+
+
 const connectDB = async (): Promise<void> => {
     try {
         if (!MONGO_URI.startsWith('mongodb://') && !MONGO_URI.startsWith('mongodb+srv://')) {
@@ -53,12 +59,22 @@ const connectDB = async (): Promise<void> => {
     }
 };
 
+
+
+
 /**
  * API Routes
  * Placeholder for authentication routes (e.g., /api/auth/login)
  * Define all API routes under /api to avoid conflicts with React
  */
 // app.use('/api/auth', authRoutes); // Add when implementing login/register
+
+// Register Route
+app.post('/api/auth/register', registerUser);
+app.post('/api/auth/login', loginUser);
+
+
+
 
 /**
  * Serve React App
@@ -69,6 +85,7 @@ app.get('*', (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
     // Note: Ensure API routes (e.g., /api/*) are defined above to avoid being caught here
 });
+
 
 /**
  * Start the server
