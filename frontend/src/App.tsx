@@ -4,7 +4,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import './App.css';
 import './index.css';
-import Landing from "./components/LandingPage.tsx";
+import Landing from "./pages/LandingPage.tsx";
 
 
 /**
