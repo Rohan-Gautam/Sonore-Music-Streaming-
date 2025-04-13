@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import path from 'path';
 import cors from 'cors';
+import songRoutes from './routes/songRoutes';
 
 /**
  * Initialize environment variables
@@ -55,9 +56,9 @@ const connectDB = async (): Promise<void> => {
 
 /**
  * API Routes
- * Placeholder for authentication routes (e.g., /api/auth/login)
  * Define all API routes under /api to avoid conflicts with React
  */
+app.use('/api/songs', songRoutes);
 // app.use('/api/auth', authRoutes); // Add when implementing login/register
 
 /**
@@ -95,17 +96,3 @@ process.on('SIGTERM', async () => {
     await mongoose.connection.close();
     process.exit(0);
 });
-
-/**
- * How to extend this server:
- * 1. **API Routes**: Add routes in src/routes/ (e.g., authRoutes.ts for /api/auth).
- *    Example: POST /api/auth/login to handle user login.
- * 2. **Models**: Define schemas in src/models/ (e.g., User.ts for authentication).
- *    Example: User model with email, passwordHash, name.
- * 3. **Controllers**: Add logic in src/controllers/ (e.g., authController.ts).
- * 4. **Authentication**: Implement JWT or OAuth for login/register.
- * 5. **Features**: Add song routes (/api/songs), playlist routes (/api/playlists).
- * 6. **Middleware**: Add rate-limiting, error handling, or logging.
- *    Example: express-rate-limit for API security.
- * 7. **Deployment**: Deploy to Render/Heroku, ensure frontend/dist is built.
- */

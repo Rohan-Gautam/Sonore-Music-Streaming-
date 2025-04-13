@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Schema, model, Document, Types } from 'mongoose';
 import bcrypt from 'bcrypt';
 
@@ -49,3 +50,18 @@ userSchema.methods.comparePassword = async function(candidatePassword: string): 
 };
 
 export default model<IUser>('User', userSchema);
+=======
+import mongoose, { Document, Schema } from 'mongoose';
+
+export interface IUser extends Document {
+    email: string;
+    password: string;
+}
+
+const userSchema = new Schema<IUser>({
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+});
+
+export default mongoose.model<IUser>('User', userSchema);
+>>>>>>> 2e055b241564240591e18a8110d8bc6a9b95b632
