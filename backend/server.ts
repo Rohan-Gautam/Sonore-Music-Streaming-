@@ -4,13 +4,16 @@ import dotenv from 'dotenv';
 import path from 'path';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
+import fileUpload from 'express-fileupload';
 import { registerUser } from './routes/register';
 import { loginUser } from './routes/login';
-import {isAuthenticated} from "./middleware/auth";
-import {logoutUser} from "./routes/logout";
+import { logoutUser } from './routes/logout';
+import { isAuthenticated } from './middleware/auth';
 import { getPlaylists, createPlaylist } from './routes/playlists';
-import { searchSongs } from './routes/songs';
+import { searchSongs, uploadSong } from './routes/songs';
+import { updateAccount } from './routes/account';
 import Song from './models/Song';
+import { getUserProfile, updateUserProfile } from './routes/users';
 
 /**
  * Initialize environment variables
@@ -65,17 +68,8 @@ const connectDB = async (): Promise<void> => {
         console.log('Connecting to MongoDB...');
         await mongoose.connect(MONGO_URI);
         console.log('🚀 MongoDB connected');
+        // Ensure the database is created
 
-        // Seed sample songs (run once or conditionally)
-        const songCount = await Song.countDocuments();
-        if (songCount === 0) {
-            await Song.insertMany([
-                { title: 'Imagine', artist: 'John Lennon', duration: 183 },
-                { title: 'Bohemian Rhapsody', artist: 'Queen', duration: 355 },
-                { title: 'Shape of You', artist: 'Ed Sheeran', duration: 234 },
-            ]);
-            console.log('Sample songs seeded');
-        }
     } catch (error) {
         console.error('❌ MongoDB error:', error);
         process.exit(1);
@@ -95,10 +89,14 @@ const connectDB = async (): Promise<void> => {
 // Register Route
 app.post('/api/auth/register', registerUser);
 app.post('/api/auth/login', loginUser);
-app.get('/api/auth/logout', logoutUser);
+app.post('/api/auth/logout', logoutUser);
 app.get('/api/playlists', isAuthenticated, getPlaylists);
 app.post('/api/playlists', isAuthenticated, createPlaylist);
 app.get('/api/songs/search', isAuthenticated, searchSongs);
+app.post('/api/account', isAuthenticated, updateAccount);
+app.post('/api/songs', isAuthenticated, uploadSong);
+app.get('/api/users/me', isAuthenticated, getUserProfile);
+app.put('/api/users/me', isAuthenticated, updateUserProfile);
 
 
 /**
