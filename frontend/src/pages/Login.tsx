@@ -24,13 +24,18 @@ function Login() {
             setMessage(response.data.message);
             console.log('Success:', response.data);
             setTimeout(() => navigate('/home'), 1000); // Redirect to home (adjust as needed)
-        } catch (error: any) {
-            console.error('Error details:', {
-                message: error.message,
-                response: error.response?.data,
-                status: error.response?.status,
-            });
-            setMessage(error.response?.data?.message || 'Login failed');
+        } catch (error: unknown) {
+            if (axios.isAxiosError(error)) {
+                console.error('Error details:', {
+                    message: error.message,
+                    response: error.response?.data,
+                    status: error.response?.status,
+                });
+            } else {
+                console.error('An unexpected error occurred:', error);
+                setMessage('Login failed');
+            }
+
         }
     };
 

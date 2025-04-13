@@ -1,57 +1,58 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Or use fetch if you prefer
+import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Register: React.FC = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+    const [username, setUsername] = useState('');
     const [message, setMessage] = useState('');
-    const [name, setName] = useState(''); // Added name state
-    const [username, setUsername] = useState(''); // Added username state
     const navigate = useNavigate();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        const payload = { name, username, email, password };
+        console.log('Submitting:', payload);
         try {
-            // Send data to backend
-            const response = await axios.post('/api/auth/register', {
-                name,
-                username,
-                email,
-                password,
+            const response = await axios.post('/api/auth/register', payload, {
+                headers: { 'Content-Type': 'application/json' },
+                withCredentials: true,
             });
-            setMessage(response.data.message); // Show success message
-            console.log('Registered user:', response.data.user);
-            setTimeout(() => navigate('/home'), 1000);
+            setMessage(response.data.message);
+            console.log('Success:', response.data);
+            setTimeout(() => navigate('/login'), 1000);
         } catch (error: any) {
-            setMessage(error.response?.data.message || 'Registration failed');
+            console.error('Error details:', {
+                message: error.message,
+                response: error.response?.data,
+                status: error.response?.status,
+            });
+            setMessage(error.response?.data?.message || 'Registration failed');
         }
     };
 
     return (
-        <div style={{ textAlign: 'center', padding: '50px' }}>
-            <h1>Register for Sonore</h1>
+        <div className="auth-container">
+            <h2>Register for Sonore</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Name:</label>
+                <div className="form-group">
+                    <label>Name (optional):</label>
                     <input
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        required
                     />
                 </div>
-
-                <div>
-                    <label>Username:</label>
+                <div className="form-group">
+                    <label>Username (optional):</label>
                     <input
                         type="text"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        required
                     />
                 </div>
-                <div>
+                <div className="form-group">
                     <label>Email:</label>
                     <input
                         type="email"
@@ -60,7 +61,7 @@ const Register: React.FC = () => {
                         required
                     />
                 </div>
-                <div>
+                <div className="form-group">
                     <label>Password:</label>
                     <input
                         type="password"
@@ -69,15 +70,14 @@ const Register: React.FC = () => {
                         required
                     />
                 </div>
-                <button type="submit">Register</button>
-                <p>
-                    Already have an account? <Link to="/login">Login</Link>
-                </p>
+                <button type="submit" className="btn">Register</button>
             </form>
             <p>{message}</p>
+            <p>
+                Already have an account? <Link to="/login">Login</Link>
+            </p>
         </div>
     );
 };
 
 export default Register;
-

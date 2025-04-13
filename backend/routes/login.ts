@@ -7,6 +7,7 @@ interface IUser {
     email: string;
     password: string;
     username: string;
+    name : string;
 }
 
 export const loginUser = async (req: Request, res: Response) => {
@@ -39,7 +40,7 @@ export const loginUser = async (req: Request, res: Response) => {
 
         // Respond with success
         res.status(200).json({
-            message: 'Login successful',
+            message: `Login successful, Hello ${user.name}`,
             user: { username: user.username, email: user.email },
         });
     } catch (error: any) {

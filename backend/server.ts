@@ -6,6 +6,11 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { registerUser } from './routes/register';
 import { loginUser } from './routes/login';
+import {isAuthenticated} from "./middleware/auth";
+import {logoutUser} from "./routes/logout";
+import { getPlaylists, createPlaylist } from './routes/playlists';
+import { searchSongs } from './routes/songs';
+import Song from './models/Song';
 
 /**
  * Initialize environment variables
@@ -26,6 +31,7 @@ const app: Express = express();
 const PORT: number = parseInt(process.env.PORT || '5000', 10);
 const MONGO_URI: string = process.env.MONGO_URI || 'mongodb://localhost:27017/sonore';
 const FRONTEND_URL: string = process.env.FRONTEND_URL || 'http://localhost:5173';
+const COOKIE_SECRET: string = process.env.COOKIE_SECRET || 'your_cookie_secret';
 
 /**
  * Middleware setup
@@ -33,10 +39,18 @@ const FRONTEND_URL: string = process.env.FRONTEND_URL || 'http://localhost:5173'
  * - express.json: Parses JSON payloads for API routes
  * - express.static: Serves React build files from frontend/dist
  */
-app.use(cors({ origin: FRONTEND_URL }));
+
+// Middleware
+app.use(
+    cors({
+        origin: FRONTEND_URL,
+        credentials: true,
+    })
+);
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET || 'your_cookie_secret'));
 app.use(express.static(path.join(__dirname, '../../frontend/dist')));
+
 
 /**
  * MongoDB connection
@@ -45,16 +59,25 @@ app.use(express.static(path.join(__dirname, '../../frontend/dist')));
  */
 
 
+// MongoDB Connection
 const connectDB = async (): Promise<void> => {
     try {
-        if (!MONGO_URI.startsWith('mongodb://') && !MONGO_URI.startsWith('mongodb+srv://')) {
-            throw new Error('Invalid MONGO_URI: Must start with "mongodb://" or "mongodb+srv://"');
-        }
-        console.log(`Attempting to connect to MongoDB...`);
+        console.log('Connecting to MongoDB...');
         await mongoose.connect(MONGO_URI);
-        console.log('🚀 MongoDB connected successfully');
+        console.log('🚀 MongoDB connected');
+
+        // Seed sample songs (run once or conditionally)
+        const songCount = await Song.countDocuments();
+        if (songCount === 0) {
+            await Song.insertMany([
+                { title: 'Imagine', artist: 'John Lennon', duration: 183 },
+                { title: 'Bohemian Rhapsody', artist: 'Queen', duration: 355 },
+                { title: 'Shape of You', artist: 'Ed Sheeran', duration: 234 },
+            ]);
+            console.log('Sample songs seeded');
+        }
     } catch (error) {
-        console.error('❌ MongoDB connection error:', error);
+        console.error('❌ MongoDB error:', error);
         process.exit(1);
     }
 };
@@ -72,8 +95,10 @@ const connectDB = async (): Promise<void> => {
 // Register Route
 app.post('/api/auth/register', registerUser);
 app.post('/api/auth/login', loginUser);
-
-
+app.get('/api/auth/logout', logoutUser);
+app.get('/api/playlists', isAuthenticated, getPlaylists);
+app.post('/api/playlists', isAuthenticated, createPlaylist);
+app.get('/api/songs/search', isAuthenticated, searchSongs);
 
 
 /**
@@ -81,12 +106,22 @@ app.post('/api/auth/login', loginUser);
  * Catch-all route for all non-API requests
  * Sends React's index.html, letting React Router handle client-side routing
  */
-app.get('*', (req: Request, res: Response) => {
+// Protected API Routes
+app.get('/api/home', isAuthenticated, (req: Request, res: Response) => {
+    res.json({ message: 'Welcome to your home page', user: req.user });
+});
+
+// Serve Public Frontend Routes
+const publicRoutes = ['/', '/login', '/register'];
+app.get(publicRoutes, (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
+});
+
+// Protect all other frontend routes with authentication
+app.get('*', isAuthenticated, (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
     // Note: Ensure API routes (e.g., /api/*) are defined above to avoid being caught here
 });
-
-
 /**
  * Start the server
  * Connects to MongoDB and starts listening on PORT

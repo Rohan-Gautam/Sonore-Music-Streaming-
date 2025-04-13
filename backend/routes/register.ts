@@ -1,24 +1,8 @@
-import mongoose, { Document, Schema } from 'mongoose';
 import bcrypt from 'bcryptjs';
 import { Request, Response } from 'express';
+import User from '../models/User';
 
-interface IUser extends Document {
-    name?: string;
-    username?: string;
-    email: string;
-    password: string;
-    createdAt: Date;
-}
 
-const userSchema = new Schema<IUser>({
-    name: { type: String, unique: true, sparse: true },
-    username: { type: String, unique: true, sparse: true },
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-    createdAt: { type: Date, default: Date.now },
-});
-
-const User = mongoose.model<IUser>('User', userSchema);
 
 export const registerUser = async (req: Request, res: Response) => {
     const { name, username, email, password } = req.body;
