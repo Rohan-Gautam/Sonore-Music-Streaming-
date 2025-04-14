@@ -9,9 +9,9 @@ import { registerUser } from './routes/register';
 import { loginUser } from './routes/login';
 import { logoutUser } from './routes/logout';
 import { isAuthenticated } from './middleware/auth';
-import { getPlaylists, createPlaylist } from './routes/playlists';
-import { searchSongs, uploadSong } from './routes/songs';
-import { updateAccount } from './routes/account';
+import { getPlaylists, createPlaylist, addSongsToPlaylist, deletePlaylist, removeSongsFromPlaylist, updatePlaylist, reorderPlaylist } from './routes/playlists';
+import { searchSongs } from './routes/songs';
+import {getAccountInfo, updateAccount} from './routes/account';
 import Song from './models/Song';
 import { getUserProfile, updateUserProfile } from './routes/users';
 
@@ -90,11 +90,25 @@ const connectDB = async (): Promise<void> => {
 app.post('/api/auth/register', registerUser);
 app.post('/api/auth/login', loginUser);
 app.post('/api/auth/logout', logoutUser);
+app.get('/api/auth/logout', logoutUser);
+
+// Playlist routes
 app.get('/api/playlists', isAuthenticated, getPlaylists);
-app.post('/api/playlists', isAuthenticated, createPlaylist);
+app.post('/api/playlists/createPlaylist', isAuthenticated, createPlaylist);
+app.post('/api/playlists/addSongsToPlaylist', isAuthenticated, addSongsToPlaylist);
+app.post('/api/playlists/removeSongsFromPlaylist', isAuthenticated, removeSongsFromPlaylist);
+app.post('/api/playlists/deletePlaylist', isAuthenticated, deletePlaylist);
+app.put('/api/playlists/updatePlaylist', isAuthenticated, updatePlaylist);
+app.post('/api/playlists/:playlistId/reorder', isAuthenticated, reorderPlaylist);
+
+// Song routes
 app.get('/api/songs/search', isAuthenticated, searchSongs);
-app.post('/api/account', isAuthenticated, updateAccount);
-app.post('/api/songs', isAuthenticated, uploadSong);
+
+// Account routes
+app.get('/api/account', isAuthenticated, getAccountInfo);
+app.put('/api/account', isAuthenticated, updateAccount);
+
+
 app.get('/api/users/me', isAuthenticated, getUserProfile);
 app.put('/api/users/me', isAuthenticated, updateUserProfile);
 

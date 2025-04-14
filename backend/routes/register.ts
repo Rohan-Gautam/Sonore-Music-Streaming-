@@ -50,4 +50,40 @@ export const registerUser = async (req: Request, res: Response) => {
     }
 };
 
+export const updateUserDetails = async (req: Request, res: Response) => {
+    const userId = req.user?._id;
+    const { name, username } = req.body;
+
+    if (!userId) {
+        return res.status(401).json({ message: 'Unauthorized' });
+    }
+
+    try {
+        const updates: any = {};
+        if (name) updates.name = name;
+        if (username) updates.username = username;
+
+        const existingUser = await User.findOne({
+            $or: [{ username: username || '' }],
+            _id: { $ne: userId }
+        });
+        if (existingUser) {
+            return res.status(400).json({ message: 'Username already exists' });
+        }
+
+        const user = await User.findByIdAndUpdate(userId, updates, { new: true }).select('-password');
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        res.status(200).json({
+            message: 'User details updated successfully',
+            user: { name: user.name, username: user.username, email: user.email }
+        });
+    } catch (error: any) {
+        console.error('Update user details error:', error);
+        res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
+
 export default User;
