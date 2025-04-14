@@ -175,7 +175,7 @@ const MediaPlayer: React.FC<MediaPlayerProps> = ({ isAuthenticated }) => {
                         onError={(e) => { e.currentTarget.src = '/default-album.png'; }}
                     />
                 ) : (
-                    <img src="/default-album.png" alt="No song" className="media-player-image" />
+                    <img src="https://i.pinimg.com/736x/d4/65/44/d4654425ee5a2c68532a630e5f4a063c.jpg" alt="No song" className="media-player-image" />
                 )}
                 {currentSong && isAuthenticated && (
                     <div className="media-player-song-info">
