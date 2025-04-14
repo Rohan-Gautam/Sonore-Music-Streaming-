@@ -36,7 +36,7 @@ export const createPlaylist = async (req: Request, res: Response) => {
             user: userId,
             songs: [],
             description,
-            coverImage: coverImageUrl,
+            coverImage: coverImageUrl || undefined,
         });
 
         await playlist.save();

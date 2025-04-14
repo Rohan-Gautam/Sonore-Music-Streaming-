@@ -14,6 +14,7 @@ import { searchSongs } from './routes/songs';
 import {getAccountInfo, updateAccount} from './routes/account';
 import Song from './models/Song';
 import { getUserProfile, updateUserProfile } from './routes/users';
+import { getPublicPlaylist } from './routes/publicPlaylist';
 
 /**
  * Initialize environment variables
@@ -97,9 +98,12 @@ app.get('/api/playlists', isAuthenticated, getPlaylists);
 app.post('/api/playlists/createPlaylist', isAuthenticated, createPlaylist);
 app.post('/api/playlists/addSongsToPlaylist', isAuthenticated, addSongsToPlaylist);
 app.post('/api/playlists/removeSongsFromPlaylist', isAuthenticated, removeSongsFromPlaylist);
-app.post('/api/playlists/deletePlaylist', isAuthenticated, deletePlaylist);
+app.delete('/api/playlists/deletePlaylist/:playlistId', isAuthenticated, deletePlaylist);
 app.put('/api/playlists/updatePlaylist', isAuthenticated, updatePlaylist);
 app.post('/api/playlists/:playlistId/reorder', isAuthenticated, reorderPlaylist);
+
+//Public routes
+app.get('/api/public-playlists/:playlistId', getPublicPlaylist);
 
 // Song routes
 app.get('/api/songs/search', isAuthenticated, searchSongs);

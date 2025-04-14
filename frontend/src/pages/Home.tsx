@@ -74,7 +74,7 @@ const Home: React.FC = () => {
         if (!newPlaylistName) return;
         try {
             const res = await axios.post(
-                '/api/playlists',
+                '/api/playlists/createPlaylist',
                 {
                     name: newPlaylistName,
                     description: newPlaylistDescription,
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
     // Delete playlist
     const handleDeletePlaylist = async (playlistId: string) => {
         try {
-            await axios.delete(`/api/playlists/${playlistId}`, { withCredentials: true });
+            await axios.delete(`/api/playlists/deletePlaylist/${playlistId}`, { withCredentials: true });
             setPlaylists(playlists.filter(playlist => playlist._id !== playlistId));
             setMessage('Playlist deleted successfully');
         } catch (error: unknown) {
