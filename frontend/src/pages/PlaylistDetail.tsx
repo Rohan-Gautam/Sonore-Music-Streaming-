@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
-
+import '../styles/PlaylistDetail.css';
 
 interface Song {
     _id: string;
@@ -224,74 +224,74 @@ const PlaylistDetail: React.FC = () => {
         window.dispatchEvent(new CustomEvent('playSong', { detail: songId }));
     };
 
-    if (loading) return <div>Loading playlist...</div>;
-    if (error) return <div>Error: {error}</div>;
-    if (!playlist) return <div>Playlist not found</div>;
+    if (loading) return <div className="playlist-loading">Loading playlist...</div>;
+    if (error) return <div className="playlist-error">Error: {error}</div>;
+    if (!playlist) return <div className="playlist-not-found">Playlist not found</div>;
 
     return (
-        <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="playlist-container">
             <button
+                className="playlist-back-button"
                 onClick={() => navigate('/home')}
-                style={{ marginBottom: '20px' }}
             >
                 Back to Home
             </button>
 
             {editMode ? (
-                <form onSubmit={handleUpdatePlaylist}>
-                    <h2>Edit Playlist</h2>
-                    <div style={{ marginBottom: '15px' }}>
-                        <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>Name:</label>
+                <form className="playlist-edit-form" onSubmit={handleUpdatePlaylist}>
+                    <h2 className="playlist-edit-title">Edit Playlist</h2>
+                    <div className="playlist-edit-field">
+                        <label htmlFor="name" className="playlist-edit-label">Name:</label>
                         <input
                             id="name"
                             type="text"
                             value={editedName}
                             onChange={(e) => setEditedName(e.target.value)}
-                            style={{ padding: '8px', width: '100%', maxWidth: '400px' }}
+                            className="playlist-edit-input"
                             required
                         />
                     </div>
-                    <div style={{ marginBottom: '15px' }}>
-                        <label htmlFor="description" style={{ display: 'block', marginBottom: '5px' }}>Description:</label>
+                    <div className="playlist-edit-field">
+                        <label htmlFor="description" className="playlist-edit-label">Description:</label>
                         <textarea
                             id="description"
                             value={editedDescription}
                             onChange={(e) => setEditedDescription(e.target.value)}
-                            style={{ padding: '8px', width: '100%', maxWidth: '400px', minHeight: '100px' }}
+                            className="playlist-edit-textarea"
                         />
                     </div>
-                    <div style={{ marginBottom: '15px' }}>
-                        <label htmlFor="coverUrl" style={{ display: 'block', marginBottom: '5px' }}>Cover Image URL:</label>
+                    <div className="playlist-edit-field">
+                        <label htmlFor="coverUrl" className="playlist-edit-label">Cover Image URL:</label>
                         <input
                             id="coverUrl"
                             type="text"
                             value={editedCoverUrl}
                             onChange={(e) => setEditedCoverUrl(e.target.value)}
-                            style={{ padding: '8px', width: '100%', maxWidth: '400px' }}
+                            className="playlist-edit-input"
                         />
                     </div>
-                    <div>
-                        <button type="submit" style={{ marginRight: '10px' }}>Save Changes</button>
-                        <button type="button" onClick={() => setEditMode(false)}>Cancel</button>
+                    <div className="playlist-edit-actions">
+                        <button type="submit" className="playlist-save-button">Save Changes</button>
+                        <button type="button" className="playlist-cancel-button" onClick={() => setEditMode(false)}>Cancel</button>
                     </div>
                 </form>
             ) : (
-                <div>
-                    <div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '20px' }}>
+                <div className="playlist-details">
+                    <div className="playlist-header">
                         {playlist.coverImage && (
                             <img
                                 src={playlist.coverImage}
                                 alt={`${playlist.name} cover`}
-                                style={{ width: '200px', height: '200px', objectFit: 'cover', marginRight: '20px', borderRadius: '5px' }}
+                                className="playlist-cover-image"
                             />
                         )}
-                        <div>
-                            <h1>{playlist.name}</h1>
-                            {playlist.description && <p>{playlist.description}</p>}
-                            <p>{playlist.songs.length} songs</p>
+                        <div className="playlist-info">
+                            <h1 className="playlist-title">{playlist.name}</h1>
+                            {playlist.description && <p className="playlist-description">{playlist.description}</p>}
+                            <p className="playlist-song-count">{playlist.songs.length} songs</p>
                             <button
+                                className="playlist-edit-button"
                                 onClick={() => setEditMode(true)}
-                                style={{ marginRight: '10px' }}
                             >
                                 Edit Playlist
                             </button>
@@ -299,45 +299,36 @@ const PlaylistDetail: React.FC = () => {
                     </div>
 
                     {/* Song Search and Add Section */}
-                    <section style={{ margin: '20px 0', padding: '20px', backgroundColor: '#f5f5f5', borderRadius: '5px' }}>
-                        <h2>Add Songs</h2>
-                        <form onSubmit={handleSearchSongs}>
+                    <section className="playlist-search-section">
+                        <h2 className="playlist-search-title">Add Songs</h2>
+                        <form className="playlist-search-form" onSubmit={handleSearchSongs}>
                             <input
                                 type="text"
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder="Search for songs to add..."
-                                style={{ width: '100%', padding: '10px', fontSize: '16px', marginBottom: '10px' }}
+                                className="playlist-search-input"
                             />
-                            <button type="submit">Search Songs</button>
+                            <button type="submit" className="playlist-search-button">Search Songs</button>
                         </form>
 
                         {searchResults.length > 0 && (
-                            <div style={{ marginTop: '15px' }}>
-                                <h3>Search Results</h3>
-                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                            <div className="playlist-search-results">
+                                <h3 className="playlist-search-results-title">Search Results</h3>
+                                <ul className="playlist-search-results-list">
                                     {searchResults.map((song) => (
                                         <li
                                             key={song._id}
-                                            style={{
-                                                display: 'flex',
-                                                justifyContent: 'space-between',
-                                                alignItems: 'center',
-                                                padding: '10px',
-                                                marginBottom: '5px',
-                                                border: '1px solid #ddd',
-                                                backgroundColor: 'white',
-                                                borderRadius: '5px'
-                                            }}
+                                            className="playlist-search-result-item"
                                         >
                                             <div>
                                                 <input
                                                     type="checkbox"
                                                     checked={selectedSongs.includes(song._id)}
                                                     onChange={() => toggleSongSelection(song._id)}
-                                                    style={{ marginRight: '10px' }}
+                                                    className="playlist-search-checkbox"
                                                 />
-                                                <strong>{song.title}</strong> by {song.artist}
+                                                <strong onClick={() => playSong(song._id)} className="playlist-search-song-title">{song.title}</strong> by {song.artist}
                                             </div>
                                         </li>
                                     ))}
@@ -345,7 +336,7 @@ const PlaylistDetail: React.FC = () => {
                                 <button
                                     onClick={handleAddSelectedSongs}
                                     disabled={selectedSongs.length === 0}
-                                    style={{ marginTop: '10px' }}
+                                    className="playlist-add-songs-button"
                                 >
                                     Add Selected Songs
                                 </button>
@@ -353,46 +344,36 @@ const PlaylistDetail: React.FC = () => {
                         )}
                     </section>
 
-                    <h2>Songs in Playlist</h2>
+                    <h2 className="playlist-songs-title">Songs in Playlist</h2>
                     {playlist.songs.length > 0 ? (
-                        <div>
-                            <ul style={{ listStyle: 'none', padding: 0 }}>
+                        <div className="playlist-songs-container">
+                            <ul className="playlist-songs-list">
                                 {playlist.songs.map((song, index) => (
                                     <li
                                         key={song._id}
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'space-between',
-                                            alignItems: 'center',
-                                            padding: '10px',
-                                            marginBottom: '5px',
-                                            border: '1px solid #ddd',
-                                            borderRadius: '5px'
-                                        }}
+                                        className="playlist-song-item"
                                     >
-                                        <div>
-                                            <strong onClick={() => playSong(song._id)}
-                                                    style={{ cursor: 'pointer', flex: 1 }}
-                                            >{song.title} </strong> by {song.artist}
+                                        <div className="playlist-song-info">
+                                            <strong onClick={() => playSong(song._id)} className="playlist-song-title">{song.title}</strong> by {song.artist}
                                         </div>
-                                        <div>
+                                        <div className="playlist-song-actions">
                                             <button
                                                 onClick={() => moveSongUp(index)}
                                                 disabled={index === 0}
-                                                style={{ marginRight: '5px' }}
+                                                className="playlist-move-up-button"
                                             >
                                                 ↑
                                             </button>
                                             <button
                                                 onClick={() => moveSongDown(index)}
                                                 disabled={index === playlist.songs.length - 1}
-                                                style={{ marginRight: '5px' }}
+                                                className="playlist-move-down-button"
                                             >
                                                 ↓
                                             </button>
                                             <button
                                                 onClick={() => handleRemoveSong(song._id)}
-                                                style={{ backgroundColor: '#f44336', marginLeft: '10px' }}
+                                                className="playlist-remove-button"
                                             >
                                                 Remove
                                             </button>
@@ -402,24 +383,19 @@ const PlaylistDetail: React.FC = () => {
                             </ul>
                             <button
                                 onClick={saveReorderedPlaylist}
-                                style={{ marginTop: '15px' }}
+                                className="playlist-save-order-button"
                             >
                                 Save Playlist Order
                             </button>
                         </div>
                     ) : (
-                        <p>No songs in this playlist yet. Search for songs above to add them.</p>
+                        <p className="playlist-no-songs">No songs in this playlist yet. Search for songs above to add them.</p>
                     )}
                 </div>
             )}
 
             {message && (
-                <div style={{
-                    padding: '10px',
-                    backgroundColor: message.includes('failed') || message.includes('Failed') ? '#ffcccc' : '#ccffcc',
-                    borderRadius: '5px',
-                    margin: '20px 0'
-                }}>
+                <div className="playlist-message">
                     {message}
                 </div>
             )}

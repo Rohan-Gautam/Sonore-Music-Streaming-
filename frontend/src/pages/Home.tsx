@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
+import { MdPlayCircleFilled } from 'react-icons/md';
 
 interface Song {
     _id: string;
@@ -248,32 +249,41 @@ const Home: React.FC = () => {
                                         borderRadius: '5px',
                                         display: 'flex',
                                         alignItems: 'center',
+                                        justifyContent: 'space-between'
                                     }}
                                 >
+                                    <div style={{display: 'flex', alignItems: 'center', flex: 1}}>
+                                        <MdPlayCircleFilled
+                                            onClick={() => playSong(song._id)}
+                                            style={{
+                                                color: '#1DB954',
+                                                fontSize: '32px',
+                                                marginRight: '10px',
+                                                cursor: 'pointer',
+                                                transition: 'transform 0.2s ease-in-out',
+                                            }}
+                                            onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
+                                            onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                        />
+                                        <span style={{flex: 1}}>{song.title} by {song.artist}</span>
+                                    </div>
                                     <input
                                         type="checkbox"
                                         checked={selectedSongs.includes(song._id)}
                                         onChange={() => toggleSongSelection(song._id)}
-                                        style={{ marginRight: '10px' }}
                                     />
-                                    <span
-                                        onClick={() => playSong(song._id)}
-                                        style={{ cursor: 'pointer', flex: 1 }}
-                                    >
-                                        {song.title} by {song.artist}
-                                    </span>
                                 </li>
                             ))}
                         </ul>
 
                         {searchResults.length > 0 && (
-                            <div style={{ marginTop: '15px' }}>
+                            <div style={{marginTop: '15px'}}>
                                 <select
                                     value={selectedPlaylist}
                                     onChange={(e) => setSelectedPlaylist(e.target.value)}
-                                    style={{ padding: '8px', marginRight: '10px' }}
+                                    style={{padding: '8px', marginRight: '10px'}}
                                 >
-                                    <option value="">Select a playlist</option>
+                                <option value="">Select a playlist</option>
                                     {playlists.map((playlist) => (
                                         <option key={playlist._id} value={playlist._id}>
                                             {playlist.name}

@@ -4,11 +4,12 @@
     left: 0;
     right: 0;
     height: 10vh;
-    background-color: #000000;
+    background-color: #474545;
     z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2vh 10vw 2vh 10vw;
 }
 
 /* Empty CSS template with all classes and IDs from MediaPlayer.tsx with possible fields in comments */
@@ -40,6 +41,7 @@
 }
 
 .media-player-image {
+    max-width: 8vh;
 // width: 10px/10%/10vw;
 // height: 10px/10%/10vh;
 // object-fit: cover/contain;
