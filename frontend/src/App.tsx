@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Landing from './pages/LandingPage';
 import Account from './pages/Account';
+import PlaylistDetail from './pages/PlaylistDetail';
 import './App.css';
 import './index.css';
 
@@ -28,6 +29,14 @@ function App() {
                     element={
                         <ProtectedRoute>
                             <Account />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/playlist/:playlistId"
+                    element={
+                        <ProtectedRoute>
+                            <PlaylistDetail />
                         </ProtectedRoute>
                     }
                 />
