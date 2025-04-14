@@ -1,0 +1,234 @@
+.media-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    background-color: #000000;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Empty CSS template with all classes and IDs from MediaPlayer.tsx with possible fields in comments */
+
+.media-player {
+// position: fixed/static/absolute/relative/sticky;
+// top/bottom/left/right: 0px/10%/50vh;
+// height: 10px/10%/10vh;
+// width: 10px/10%/10vw;
+// background-color: #000000/#ffffff/rgba(0,0,0,0.5);
+// z-index: 0/10/100;
+// display: flex/block/inline/grid;
+// align-items: center/flex-start/flex-end;
+// justify-content: space-between/center/flex-start;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+// color: #000000/#ffffff;
+}
+
+.media-player-left {
+// display: flex/block/inline;
+// align-items: center/flex-start/flex-end;
+// justify-content: space-between/center/flex-start;
+// width: 10px/10%/10vw;
+// height: 10px/10%/10vh;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+// gap: 0px/10px;
+}
+
+.media-player-image {
+// width: 10px/10%/10vw;
+// height: 10px/10%/10vh;
+// object-fit: cover/contain;
+// border-radius: 0px/50%/10px;
+// cursor: pointer/default;
+// transition: all 0.3s ease;
+}
+
+.media-player-song-info {
+// display: flex/block/inline;
+// flex-direction: column/row;
+// justify-content: space-between/center/flex-start;
+// align-items: center/flex-start/flex-end;
+// margin: 0px 10px 20px 30px;
+// padding: 0px 10px 20px 30px;
+}
+
+.media-player-song-title {
+// font-size: 10px/1rem/2em;
+// font-weight: normal/bold/100-900;
+// color: #000000/#ffffff;
+// text-overflow: ellipsis;
+// white-space: nowrap;
+// max-width: 100px/10%/10vw;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-song-artist {
+// font-size: 10px/1rem/2em;
+// font-weight: normal/bold/100-900;
+// color: #000000/#ffffff;
+// text-overflow: ellipsis;
+// white-space: nowrap;
+// max-width: 100px/10%/10vw;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-center {
+// display: flex/block/inline;
+// flex-direction: column/row;
+// align-items: center/flex-start/flex-end;
+// justify-content: space-between/center/flex-start;
+// flex: 1/0 auto;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-controls {
+// display: flex/block/inline;
+// align-items: center/flex-start/flex-end;
+// justify-content: space-between/center/flex-start;
+// gap: 0px/10px;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+// background-color: #000000/#ffffff/rgba(0,0,0,0.5);
+}
+
+.media-player-control-button {
+// background: none/transparent/#000000;
+// border: none/1px solid #000000;
+// border-radius: 0px/50%/10px;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+// color: #000000/#ffffff;
+// cursor: pointer/default;
+// opacity: 0.5/1;
+// transition: all 0.3s ease;
+// width: 10px/10%/10vw;
+// height: 10px/10%/10vh;
+}
+
+.media-player-play-pause {
+// background: #000000/#ffffff;
+// border: none/1px solid #000000;
+// border-radius: 50%/10px;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+// color: #000000/#ffffff;
+// cursor: pointer/default;
+// transition: all 0.3s ease;
+// width: 10px/10%/10vw;
+// height: 10px/10%/10vh;
+}
+
+.media-player-progress {
+// display: flex/block/inline;
+// align-items: center/flex-start/flex-end;
+// justify-content: space-between/center/flex-start;
+// width: 100px/10%/10vw;
+// max-width: 100px/10%/10vw;
+// margin: 0px 10px 20px 30px;
+// padding: 0px 10px 20px 30px;
+// gap: 0px/10px;
+}
+
+.media-player-time-current {
+// font-size: 10px/1rem/2em;
+// color: #000000/#ffffff;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-progress-slider {
+// width: 100px/10%/10vw;
+// height: 10px/1px;
+// background: #000000/#ffffff;
+// border-radius: 0px/50%/10px;
+// cursor: pointer/default;
+// appearance: none;
+// outline: none;
+}
+
+.media-player-time-total {
+// font-size: 10px/1rem/2em;
+// color: #000000/#ffffff;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-right {
+// display: flex/block/inline;
+// align-items: center/flex-start/flex-end;
+// justify-content: space-between/center/flex-start;
+// gap: 0px/10px;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-queue-button {
+// background: none/transparent/#000000;
+// border: none/1px solid #000000;
+// border-radius: 0px/50%/10px;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+// color: #000000/#ffffff;
+// cursor: pointer/default;
+// transition: all 0.3s ease;
+}
+
+.media-player-volume-button {
+// background: none/transparent/#000000;
+// border: none/1px solid #000000;
+// border-radius: 0px/50%/10px;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+// color: #000000/#ffffff;
+// cursor: pointer/default;
+// opacity: 0.5/1;
+// transition: all 0.3s ease;
+}
+
+.media-player-volume-slider {
+// width: 10px/10%/10vw;
+// height: 10px/1px;
+// background: #000000/#ffffff;
+// border-radius: 0px/50%/10px;
+// cursor: pointer/default;
+// appearance: none;
+// outline: none;
+}
+
+.media-player-queue {
+// position: absolute/fixed/static;
+// bottom: 0px/10%/10vh;
+// right: 0px/10%/10vw;
+// background-color: #000000/#ffffff/rgba(0,0,0,0.5);
+// padding: 0px 10px 20px 30px;
+// border-radius: 0px/50%/10px;
+// box-shadow: 0 0 10px rgba(0,0,0,0.5);
+// max-height: 100px/10%/10vh;
+// overflow-y: auto/hidden;
+// width: 100px/10%/10vw;
+}
+
+.media-player-queue-title {
+// font-size: 10px/1rem/2em;
+// font-weight: normal/bold/100-900;
+// color: #000000/#ffffff;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-queue-item {
+// font-size: 10px/1rem/2em;
+// color: #000000/#ffffff;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+}
+
+.media-player-queue-empty {
+// font-size: 10px/1rem/2em;
+// color: #000000/#ffffff;
+// padding: 0px 10px 20px 30px;
+// margin: 0px 10px 20px 30px;
+}

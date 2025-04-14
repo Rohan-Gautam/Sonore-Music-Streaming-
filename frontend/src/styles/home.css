@@ -30,3 +30,22 @@ li {
     padding: 10px;
     border-bottom: 1px solid #eee;
 }
+
+/* home.css */
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.playlist-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+.playlist-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}

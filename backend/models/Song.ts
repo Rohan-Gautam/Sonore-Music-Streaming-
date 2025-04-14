@@ -1,6 +1,6 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
-interface ISong extends Document {
+export interface ISong extends Document {
     title: string;
     artist: string;
     duration: number;

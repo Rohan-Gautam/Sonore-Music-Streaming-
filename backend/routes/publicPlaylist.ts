@@ -1,85 +1,101 @@
-import mongoose, { Schema, Document } from 'mongoose';
-import { Request, Response } from 'express';
+import mongoose, { Schema, Document, Types } from 'mongoose';
+import { Request, Response, Router } from 'express';
+import Song , { ISong } from '../models/Song';
 
-// Define interfaces for TypeScript
-interface ISong extends Document {
-    title: string;
-    artist: string;
-    duration: number;
-}
+
 
 interface IPublicPlaylist extends Document {
     name: string;
-    description: string;
-    songs: mongoose.Types.ObjectId[];
-    coverImage: string;
+    songs: Types.ObjectId[];
+    createdAt: Date;
+    updatedAt?: Date;
+    coverImage?: string;
+    description?: string;
+    category: string;
 }
 
-// Song schema (assuming songs are referenced from a Song collection)
-const songSchema = new Schema<ISong>({
-    title: { type: String, required: true },
-    artist: { type: String, required: true },
-    duration: { type: Number, required: true }, // Duration in seconds
-});
-
 // PublicPlaylist schema
-const publicPlaylistSchema = new Schema<IPublicPlaylist>({
-    name: {
-        type: String,
-        required: true,
+const publicPlaylistSchema = new Schema<IPublicPlaylist>(
+    {
+        name: {
+            type: String,
+            required: true,
+        },
+        songs: [{
+            type: Schema.Types.ObjectId,
+            ref: 'Song',
+            default: [],
+        }],
+        createdAt: {
+            type: Date,
+            required: true,
+            default: Date.now,
+        },
+        updatedAt: {
+            type: Date,
+        },
+        coverImage: {
+            type: String,
+            default: 'https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2022/03/spotify-playlist-cover-power-lines-music-notes-032322.jpg',
+        },
+        description: {
+            type: String,
+            default: '',
+        },
+        category: {
+            type: String,
+            required: true,
+            enum: ['Pop', 'Rock', 'Jazz', 'Classical', 'Hip-Hop', 'Electronic', 'Other'],
+        },
     },
-    description: {
-        type: String,
-        default: '',
-    },
-    songs: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Song',
-        default: [],
-    }],
-    coverImage: {
-        type: String,
-        default: 'https://marketplace.canva.com/EAGJJYJvO-8/1/0/1600w/canva-purple-gradient-modern-80s-aesthetic-timeless-tunes-playlist-cover-llEskz_MyBg.jpg',
-    },
-});
+    { timestamps: false }
+);
 
 // Models
-const Song = mongoose.model<ISong>('Song', songSchema);
 const PublicPlaylist = mongoose.model<IPublicPlaylist>('PublicPlaylist', publicPlaylistSchema);
 
-// Controller to get public playlist info and songs
-export const getPublicPlaylist = async (req: Request, res: Response) => {
+// Controller to get all public playlists, optionally filtered by category
+export const getAllPublicPlaylists = async (req: Request, res: Response) => {
     try {
-        const { playlistId } = req.params;
+        const { category } = req.query;
 
-        // Validate playlistId format
-        if (!mongoose.Types.ObjectId.isValid(playlistId)) {
-            return res.status(400).json({ message: 'Invalid playlist ID' });
+        // Build query
+        const query: any = {};
+        if (category && typeof category === 'string') {
+            query.category = category;
         }
 
-        // Find playlist and populate songs
-        const playlist = await PublicPlaylist.findById(playlistId)
-            .populate('songs', 'title artist duration') // Populate only specific song fields
-            .lean(); // Convert to plain JSON for lightweight response
+        // Fetch playlists and populate songs
+        const playlists = await PublicPlaylist.find(query)
+            .populate('songs', 'title artist duration')
+            .lean();
 
-        if (!playlist) {
-            return res.status(404).json({ message: 'Public playlist not found' });
+        // Return empty array if no playlists exist
+        if (!playlists || playlists.length === 0) {
+            return res.status(200).json({
+                message: 'No public playlists found',
+                playlists: [],
+            });
         }
+
+        // Map playlists to include only necessary fields
+        const playlistData = playlists.map(playlist => ({
+            _id: playlist._id,
+            name: playlist.name,
+            description: playlist.description,
+            coverImage: playlist.coverImage,
+            songs: playlist.songs,
+            category: playlist.category,
+            createdAt: playlist.createdAt,
+            updatedAt: playlist.updatedAt,
+        }));
 
         res.status(200).json({
-            message: 'Public playlist retrieved successfully',
-            playlist: {
-                _id: playlist._id,
-                name: playlist.name,
-                description: playlist.description,
-                coverImage: playlist.coverImage,
-                songs: playlist.songs,
-            },
+            message: 'Public playlists retrieved successfully',
+            playlists: playlistData,
         });
     } catch (error: any) {
-        console.error('Get public playlist error:', error);
+        console.error('Get all public playlists error:', error);
         res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
-
-export default PublicPlaylist;

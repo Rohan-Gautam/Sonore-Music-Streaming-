@@ -219,6 +219,11 @@ const PlaylistDetail: React.FC = () => {
         }
     };
 
+    // Play a song
+    const playSong = (songId: string) => {
+        window.dispatchEvent(new CustomEvent('playSong', { detail: songId }));
+    };
+
     if (loading) return <div>Loading playlist...</div>;
     if (error) return <div>Error: {error}</div>;
     if (!playlist) return <div>Playlist not found</div>;
@@ -366,7 +371,9 @@ const PlaylistDetail: React.FC = () => {
                                         }}
                                     >
                                         <div>
-                                            <strong>{song.title}</strong> by {song.artist}
+                                            <strong onClick={() => playSong(song._id)}
+                                                    style={{ cursor: 'pointer', flex: 1 }}
+                                            >{song.title} </strong> by {song.artist}
                                         </div>
                                         <div>
                                             <button

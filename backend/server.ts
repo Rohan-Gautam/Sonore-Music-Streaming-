@@ -10,11 +10,12 @@ import { loginUser } from './routes/login';
 import { logoutUser } from './routes/logout';
 import { isAuthenticated } from './middleware/auth';
 import { getPlaylists, createPlaylist, addSongsToPlaylist, deletePlaylist, removeSongsFromPlaylist, updatePlaylist, reorderPlaylist } from './routes/playlists';
-import { searchSongs } from './routes/songs';
+import { searchSongs, getSongById } from './routes/songs';
 import {getAccountInfo, updateAccount} from './routes/account';
 import Song from './models/Song';
 import { getUserProfile, updateUserProfile } from './routes/users';
-import { getPublicPlaylist } from './routes/publicPlaylist';
+import { getAllPublicPlaylists } from './routes/publicPlaylist';
+
 
 /**
  * Initialize environment variables
@@ -103,10 +104,11 @@ app.put('/api/playlists/updatePlaylist', isAuthenticated, updatePlaylist);
 app.post('/api/playlists/:playlistId/reorder', isAuthenticated, reorderPlaylist);
 
 //Public routes
-app.get('/api/public-playlists/:playlistId', getPublicPlaylist);
+app.get('/api/public-playlists', getAllPublicPlaylists);
 
 // Song routes
 app.get('/api/songs/search', isAuthenticated, searchSongs);
+app.get('/api/songs/:songId', getSongById);
 
 // Account routes
 app.get('/api/account', isAuthenticated, getAccountInfo);
