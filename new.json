@@ -1,0 +1,2931 @@
+[
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758740"
+      },
+      "url": "https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//songs1.mp3",
+      "title": "Ishk",
+      "artist": "Faheen Abdullah",
+      "duration": 228,
+      "createdAt": {
+        "$date": "2025-04-10T10:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Lost and Found",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758741"
+      },
+      "url":"https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//song2.mp3",
+      "title": "Ek jaisa haal tera mera",
+      "artist": "Arijit Singh",
+      "duration": 232,
+      "createdAt": {
+        "$date": "2025-04-09T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Ek jaisa haal tera mera",
+      "releaseYear": 2024,
+      "genre": [
+        "rohamntic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758742"
+      },
+      "url":"https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//song3.mp3",
+      "title": "Beqarar Yeh Dil",
+      "artist": [" Asim Azhar"," Qirat Haider"],
+      "duration": 197,
+      "createdAt": {
+        "$date": "2025-04-08T15:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Mohabbat",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758743"
+      },
+      "url":"https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//song4.mp3",
+      "title": "Do Pal",
+      "artist":["ABRK"," Rinku Chautala"],
+      "duration": 113,
+      "createdAt": {
+        "$date": "2025-04-07T09:20:00.000Z"
+      },
+      "__v": 0,
+      "album": "Action Replay",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758744"
+      },
+      "url":"https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//song5.mp3",
+      "title": "Dil Tujhpe Aa Gaya ",
+      "artist": [" Stebin Ben", "Payal Dev"],
+      "duration": 461,
+      "createdAt": {
+        "$date": "2025-04-06T11:10:00.000Z"
+      },
+      "__v": 0,
+      "album": "Dil Ke Raaste",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758745"
+      },
+      "url":"https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//song5.mp3",
+      "title": "Triple Og",
+      "artist": "Divine",
+      "duration": 183,
+      "createdAt": {
+        "$date": "2025-04-05T14:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Party Vibes",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Dance"
+      ],
+      "language": "Hindi",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758746"
+      },
+      "url":"https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//song6.mp3",
+      "title": "Ishq Ne Pakra Na Tha Ghalib",
+      "artist": "Rahat Fateh Ali Khan",
+      "duration": 684,
+      "createdAt": {
+        "$date": "2025-04-04T16:25:00.000Z"
+      },
+      "__v": 0,
+      "album": "Desi Dil",
+      "releaseYear": 2025,
+      "genre": [
+        "Folk",
+        "Gajhal"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758747"
+      },
+      "title": "Milenge Hum Nahi ",
+      "artist": " Kunaal Vermaa",
+      "duration": 209,
+      "createdAt": {
+        "$date": "2025-04-03T18:40:00.000Z"
+      },
+      "__v": 0,
+      "album": "Dreamscape",
+      "releaseYear": 2025,
+      "genre": [
+        "Indie",
+        "Romantic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758748"
+      },
+      "title": "Ve Haniya Ve Dil Janiya Udaariyaan",
+      "artist": "Dhvani Bhanushali",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-04-02T08:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Love Beats",
+      "releaseYear": 2024,
+      "genre": [
+        "Romantic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758749"
+      },
+       "url":"https://yidiwiygfpfswfowgnfs.supabase.co/storage/v1/object/public/songs//song7.mp3",
+      "title": "Tu Hai To Mai Hu",
+      "artist":["Arijit Singh"," Afsana Khan"],
+      "duration": 247,
+      "createdAt": {
+        "$date": "2025-04-01T10:50:00.000Z"
+      },
+      "__v": 0,
+      "album": "Zindagi",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75874a"
+      },
+      "title": "Hawaayein",
+      "artist": "Pritam, Arijit Singh",
+      "duration": 265,
+      "createdAt": {
+        "$date": "2025-03-31T12:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Romance Reloaded",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75874b"
+      },
+      "title": "Nach Meri Jaan",
+      "artist": "Yo Yo Honey Singh",
+      "duration": 195,
+      "createdAt": {
+        "$date": "2025-03-30T14:20:00.000Z"
+      },
+      "__v": 0,
+      "album": "Desi Swag",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Dance"
+      ],
+      "language": "Hindi",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75874c"
+      },
+      "title": "Tum Hi Ho",
+      "artist": "Mithoon, Arijit Singh",
+      "duration": 280,
+      "createdAt": {
+        "$date": "2025-03-29T16:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Forever Love",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75874d"
+      },
+      "title": "Party All Night",
+      "artist": "Guru Randhawa",
+      "duration": 185,
+      "createdAt": {
+        "$date": "2025-03-28T09:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Night Fever",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75874e"
+      },
+      "title": "Mere Sapne",
+      "artist": "Sunidhi Chauhan",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-03-27T11:55:00.000Z"
+      },
+      "__v": 0,
+      "album": "Dil Se",
+      "releaseYear": 2025,
+      "genre": [
+        "Melody",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75874f"
+      },
+      "title": "Zara Sa",
+      "artist": "KK",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-26T13:10:00.000Z"
+      },
+      "__v": 0,
+      "album": "Heartstrings",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758750"
+      },
+      "title": "Boom Boom",
+      "artist": "Raftaar",
+      "duration": 175,
+      "createdAt": {
+        "$date": "2025-03-25T15:25:00.000Z"
+      },
+      "__v": 0,
+      "album": "Rap King",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Dance"
+      ],
+      "language": "Hindi",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758751"
+      },
+      "title": "Ishq Wala Love",
+      "artist": "Vishal-Shekhar, Shreya Ghoshal",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-03-24T17:40:00.000Z"
+      },
+      "__v": 0,
+      "album": "College Days",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758752"
+      },
+      "title": "Chalte Chalte",
+      "artist": "Sonu Nigam",
+      "duration": 270,
+      "createdAt": {
+        "$date": "2025-03-23T08:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Journey of Love",
+      "releaseYear": 2025,
+      "genre": [
+        "Melody",
+        "Romantic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758753"
+      },
+      "title": "Rang De",
+      "artist": "Tanishk Bagchi, Neha Kakkar",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-22T10:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Holi Hungama",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758754"
+      },
+      "title": "Dil Ke Paas",
+      "artist": "Tulsi Kumar",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-03-21T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Close to Heart",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758755"
+      },
+      "title": "Mast Malang",
+      "artist": "Mika Singh",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-03-20T14:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Masti Express",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758756"
+      },
+      "title": "Yaadein",
+      "artist": "Palak Muchhal",
+      "duration": 255,
+      "createdAt": {
+        "$date": "2025-03-19T16:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Memory Lane",
+      "releaseYear": 2025,
+      "genre": [
+        "Melody",
+        "Romantic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758757"
+      },
+      "title": "Dhadkan",
+      "artist": "Udit Narayan",
+      "duration": 265,
+      "createdAt": {
+        "$date": "2025-03-18T18:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Heartbeat",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758758"
+      },
+      "title": "Ladki Beautiful",
+      "artist": "Karan Aujla",
+      "duration": 185,
+      "createdAt": {
+        "$date": "2025-03-17T08:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Punjabi Mix",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "Hindi",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758759"
+      },
+      "title": "Mera Dil",
+      "artist": "Asees Kaur",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-16T10:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Love Story",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75875a"
+      },
+      "title": "Jhoom Jhoom",
+      "artist": "Harrdy Sandhu",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-15T13:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Dance Floor",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75875b"
+      },
+      "title": "Saathiya",
+      "artist": "Atif Aslam",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-03-14T15:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Soulmate",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75875c"
+      },
+      "title": "Bhangra Beat",
+      "artist": "Diljit Dosanjh",
+      "duration": 180,
+      "createdAt": {
+        "$date": "2025-03-13T17:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Punjab Di Shaan",
+      "releaseYear": 2025,
+      "genre": [
+        "Bhangra",
+        "Dance"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75875d"
+      },
+      "title": "Tera Chehra",
+      "artist": "Adnan Sami",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-03-12T08:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Romantic Hits",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75875e"
+      },
+      "title": "Gallan Goodiyaan",
+      "artist": "Sukhwinder Singh",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-03-11T11:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Family Drama",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75875f"
+      },
+      "title": "Dil Mera",
+      "artist": "Darshan Raval",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-03-10T13:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Young Love",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758760"
+      },
+      "title": "Masti Ki Baat",
+      "artist": "Benny Dayal",
+      "duration": 195,
+      "createdAt": {
+        "$date": "2025-03-09T15:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Fun Unlimited",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758761"
+      },
+      "title": "Pyaar Tera",
+      "artist": "Shaan",
+      "duration": 255,
+      "createdAt": {
+        "$date": "2025-03-08T17:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Love Forever",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758762"
+      },
+      "title": "Chhupana Bhi Nahi Aata",
+      "artist": "Papon",
+      "duration": 270,
+      "createdAt": {
+        "$date": "2025-03-07T08:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Soulful Nights",
+      "releaseYear": 2025,
+      "genre": [
+        "Melody",
+        "Romantic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758763"
+      },
+      "title": "Tera Ban Jaunga",
+      "artist": "Akhil Sachdeva",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-06T10:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Promises",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758764"
+      },
+      "title": "Mera Mann",
+      "artist": "Falak Shabir",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-03-05T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Heartbreak",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758765"
+      },
+      "title": "Dance Basanti",
+      "artist": "Anushka Manchanda",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-03-04T14:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Bollywood Blast",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758766"
+      },
+      "title": "Tumse Hi",
+      "artist": "Ankit Tiwari",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-03-03T17:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Only You",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758767"
+      },
+      "title": "Jashn-e-Bahara",
+      "artist": "Javed Ali",
+      "duration": 270,
+      "createdAt": {
+        "$date": "2025-03-02T08:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Celebration",
+      "releaseYear": 2025,
+      "genre": [
+        "Melody",
+        "Romantic"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758768"
+      },
+      "title": "Halla Re",
+      "artist": "Shruti Pathak",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-01T10:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Festive Vibes",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758769"
+      },
+      "title": "Dil Diyan Gallan",
+      "artist": "Atif Aslam",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-02-28T12:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Tiger Returns",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75876a"
+      },
+      "title": "Bole Chudiyan",
+      "artist": "Kavita Krishnamurthy",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-02-27T15:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Family Ties",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75876b"
+      },
+      "title": "Tere Liye",
+      "artist": "Lata Mangeshkar",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-02-26T17:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Timeless Love",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Melody"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75876c"
+      },
+      "title": "Zindagi Ek Safar",
+      "artist": "Kishore Kumar",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-02-25T08:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Retro Rewind",
+      "releaseYear": 2025,
+      "genre": [
+        "Melody",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75876d"
+      },
+      "title": "Chak Dhoom Dhoom",
+      "artist": "Sapna Awasthi",
+      "duration": 195,
+      "createdAt": {
+        "$date": "2025-02-24T10:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Monsoon Masti",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Folk"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75876e"
+      },
+      "title": "Mausam",
+      "artist": "Rahul Vaidya",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-02-23T13:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Seasons of Love",
+      "releaseYear": 2025,
+      "genre": [
+        "Romantic",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75876f"
+      },
+      "title": "Rang Barse",
+      "artist": "Amit Trivedi",
+      "duration": 205,
+      "createdAt": {
+        "$date": "2025-02-22T15:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Holi Hai",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Pop"
+      ],
+      "language": "Hindi",
+      "isExplicit": false
+    },
+  
+
+  
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758770"
+      },
+      "title": "Midnight Drive",
+      "artist": "Taylor Swift",
+      "duration": 220,
+      "createdAt": {
+        "$date": "2025-04-12T10:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "City Lights",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Synth-Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758771"
+      },
+      "title": "No Rules",
+      "artist": "Drake",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-04-11T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Night Owl",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758772"
+      },
+      "title": "Pink Sunset",
+      "artist": "Chappell Roan",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-04-10T15:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Neon Dreams",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Country"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758773"
+      },
+      "title": "Ghost Town",
+      "artist": "The Weeknd",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-04-09T09:20:00.000Z"
+      },
+      "__v": 0,
+      "album": "After Hours Pt. 2",
+      "releaseYear": 2025,
+      "genre": [
+        "R&B",
+        "Synth-Pop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758774"
+      },
+      "title": "Electric Pulse",
+      "artist": "Dua Lipa",
+      "duration": 195,
+      "createdAt": {
+        "$date": "2025-04-08T11:10:00.000Z"
+      },
+      "__v": 0,
+      "album": "Future Beat",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758775"
+      },
+      "title": "Lost in Time",
+      "artist": "Ed Sheeran",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-04-07T14:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Timelines",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758776"
+      },
+      "title": "Fire Within",
+      "artist": "SZA",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-04-06T16:25:00.000Z"
+      },
+      "__v": 0,
+      "album": "Soul Search",
+      "releaseYear": 2025,
+      "genre": [
+        "R&B",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758777"
+      },
+      "title": "Skyline",
+      "artist": "Billie Eilish",
+      "duration": 205,
+      "createdAt": {
+        "$date": "2025-04-05T18:40:00.000Z"
+      },
+      "__v": 0,
+      "album": "Horizon",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758778"
+      },
+      "title": "Break the Chain",
+      "artist": "Post Malone",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-04-04T08:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Rebel Heart",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758779"
+      },
+      "title": "Echoes",
+      "artist": "Harry Styles",
+      "duration": 235,
+      "createdAt": {
+        "$date": "2025-04-03T10:50:00.000Z"
+      },
+      "__v": 0,
+      "album": "Reflections",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75877a"
+      },
+      "title": "Runaway",
+      "artist": "Sabrina Carpenter",
+      "duration": 215,
+      "createdAt": {
+        "$date": "2025-04-02T12:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Chasing Stars",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75877b"
+      },
+      "title": "Cold Streets",
+      "artist": "Kendrick Lamar",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-04-01T14:20:00.000Z"
+      },
+      "__v": 0,
+      "album": "City Limits",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Rap"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75877c"
+      },
+      "title": "Starlight",
+      "artist": "Adele",
+      "duration": 270,
+      "createdAt": {
+        "$date": "2025-03-31T16:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Celestial",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75877d"
+      },
+      "title": "Vibes Only",
+      "artist": "Jack Harlow",
+      "duration": 185,
+      "createdAt": {
+        "$date": "2025-03-30T09:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Good Times",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75877e"
+      },
+      "title": "Fever Dream",
+      "artist": "Tate McRae",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-29T11:55:00.000Z"
+      },
+      "__v": 0,
+      "album": "Chaos Theory",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75877f"
+      },
+      "title": "Wild Ones",
+      "artist": "Charli XCX",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-03-28T13:10:00.000Z"
+      },
+      "__v": 0,
+      "album": "Hyperdrive",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Electronic"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758780"
+      },
+      "title": "Shadows",
+      "artist": "Lorde",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-03-27T15:25:00.000Z"
+      },
+      "__v": 0,
+      "album": "Dark Bloom",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758781"
+      },
+      "title": "Neon Heart",
+      "artist": "Olivia Rodrigo",
+      "duration": 225,
+      "createdAt": {
+        "$date": "2025-03-26T17:40:00.000Z"
+      },
+      "__v": 0,
+      "album": "Guts 2",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758782"
+      },
+      "title": "Freedom Call",
+      "artist": "Beyoncé",
+      "duration": 255,
+      "createdAt": {
+        "$date": "2025-03-25T08:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Liberation",
+      "releaseYear": 2025,
+      "genre": [
+        "R&B",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758783"
+      },
+      "title": "Highway",
+      "artist": "Zach Bryan",
+      "duration": 265,
+      "createdAt": {
+        "$date": "2025-03-24T10:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Open Road",
+      "releaseYear": 2025,
+      "genre": [
+        "Country",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758784"
+      },
+      "title": "Glitch",
+      "artist": "Rico Nasty",
+      "duration": 180,
+      "createdAt": {
+        "$date": "2025-03-23T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Digital Rage",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Punk"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758785"
+      },
+      "title": "Waves",
+      "artist": "Hozier",
+      "duration": 270,
+      "createdAt": {
+        "$date": "2025-03-22T14:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Ocean Songs",
+      "releaseYear": 2025,
+      "genre": [
+        "Folk",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758786"
+      },
+      "title": "Burn Bright",
+      "artist": "Kacey Musgraves",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-03-21T16:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Starlit",
+      "releaseYear": 2025,
+      "genre": [
+        "Country",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758787"
+      },
+      "title": "Overdrive",
+      "artist": "Calvin Harris",
+      "duration": 195,
+      "createdAt": {
+        "$date": "2025-03-20T18:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Club Nights",
+      "releaseYear": 2025,
+      "genre": [
+        "Dance",
+        "Electronic"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758788"
+      },
+      "title": "Flicker",
+      "artist": "Niall Horan",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-19T08:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Moments",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758789"
+      },
+      "title": "Code Red",
+      "artist": "21 Savage",
+      "duration": 205,
+      "createdAt": {
+        "$date": "2025-03-18T10:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Street Lights",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Rap"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75878a"
+      },
+      "title": "Daybreak",
+      "artist": "Maggie Rogers",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-03-17T13:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "New Dawn",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75878b"
+      },
+      "title": "No Limits",
+      "artist": "Doja Cat",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-03-16T15:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Freak Mode",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75878c"
+      },
+      "title": "Golden Hour",
+      "artist": "Sam Smith",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-03-15T17:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Light Within",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75878d"
+      },
+      "title": "Riptide",
+      "artist": "Vance Joy",
+      "duration": 220,
+      "createdAt": {
+        "$date": "2025-03-14T08:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Coastlines",
+      "releaseYear": 2025,
+      "genre": [
+        "Folk",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75878e"
+      },
+      "title": "Static",
+      "artist": "Megan Thee Stallion",
+      "duration": 185,
+      "createdAt": {
+        "$date": "2025-03-13T11:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Hotshot",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Rap"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75878f"
+      },
+      "title": "Moonlit",
+      "artist": "Gracie Abrams",
+      "duration": 235,
+      "createdAt": {
+        "$date": "2025-03-12T13:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Soft Shadows",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Indie"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758790"
+      },
+      "title": "Thunder",
+      "artist": "Imagine Dragons",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-03-11T15:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Storm Chaser",
+      "releaseYear": 2025,
+      "genre": [
+        "Rock",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758791"
+      },
+      "title": "Haze",
+      "artist": "Tems",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-03-10T17:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Mist",
+      "releaseYear": 2025,
+      "genre": [
+        "R&B",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758792"
+      },
+      "title": "Crush",
+      "artist": "PinkPantheress",
+      "duration": 175,
+      "createdAt": {
+        "$date": "2025-03-09T08:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Heart Skip",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Electronic"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758793"
+      },
+      "title": "Last Stand",
+      "artist": "Foo Fighters",
+      "duration": 255,
+      "createdAt": {
+        "$date": "2025-03-08T10:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Final Fight",
+      "releaseYear": 2025,
+      "genre": [
+        "Rock",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758794"
+      },
+      "title": "Velvet",
+      "artist": "Kali Uchis",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-03-07T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Smooth Moves",
+      "releaseYear": 2025,
+      "genre": [
+        "R&B",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758795"
+      },
+      "title": "Rewind",
+      "artist": "Paramore",
+      "duration": 215,
+      "createdAt": {
+        "$date": "2025-03-06T14:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Backtrack",
+      "releaseYear": 2025,
+      "genre": [
+        "Rock",
+        "Pop-Punk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758796"
+      },
+      "title": "Orbit",
+      "artist": "Coldplay",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-03-05T17:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Cosmos",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758797"
+      },
+      "title": "Dusk",
+      "artist": "Noah Kahan",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-04T08:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Twilight Tales",
+      "releaseYear": 2025,
+      "genre": [
+        "Folk",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758798"
+      },
+      "title": "Flash",
+      "artist": "Metro Boomin",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-03T10:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "City Pulse",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f758799"
+      },
+      "title": "Forever Now",
+      "artist": "Shawn Mendes",
+      "duration": 225,
+      "createdAt": {
+        "$date": "2025-03-02T12:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Eternal",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75879a"
+      },
+      "title": "Spark",
+      "artist": "Reneé Rapp",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-03-01T15:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Ignite",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75879b"
+      },
+      "title": "Drift",
+      "artist": "Leon Bridges",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-02-28T17:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "River Road",
+      "releaseYear": 2025,
+      "genre": [
+        "Soul",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75879c"
+      },
+      "title": "Hustle",
+      "artist": "Lil Nas X",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-02-27T08:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Game Plan",
+      "releaseYear": 2025,
+      "genre": [
+        "Hip-Hop",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75879d"
+      },
+      "title": "Glow",
+      "artist": "Miley Cyrus",
+      "duration": 235,
+      "createdAt": {
+        "$date": "2025-02-26T10:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Radiance",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75879e"
+      },
+      "title": "Fade Out",
+      "artist": "Clairo",
+      "duration": 220,
+      "createdAt": {
+        "$date": "2025-02-25T13:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Soft Focus",
+      "releaseYear": 2025,
+      "genre": [
+        "Indie",
+        "Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f75879f"
+      },
+      "title": "Rush",
+      "artist": "Troye Sivan",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-02-24T15:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Adrenaline",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a0"
+      },
+      "title": "Roots",
+      "artist": "Chris Stapleton",
+      "duration": 265,
+      "createdAt": {
+        "$date": "2025-02-23T17:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Back Home",
+      "releaseYear": 2025,
+      "genre": [
+        "Country",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a1"
+      },
+      "title": "Die With a Smile",
+      "artist": "Lady Gaga, Bruno Mars",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-04-12T10:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "LG7",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a2"
+      },
+      "title": "That’s So True",
+      "artist": "Gracie Abrams",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-04-11T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Close to You",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Indie"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a3"
+      },
+      "title": "The Giver",
+      "artist": "Chappell Roan",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-04-10T15:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Country Nights",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Country"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a4"
+      },
+      "title": "Messy",
+      "artist": "Lola Young",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-04-09T09:20:00.000Z"
+      },
+      "__v": 0,
+      "album": "ADHD Anthems",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a5"
+      },
+      "title": "APT.",
+      "artist": "ROSÉ, Bruno Mars",
+      "duration": 195,
+      "createdAt": {
+        "$date": "2025-04-08T11:10:00.000Z"
+      },
+      "__v": 0,
+      "album": "Pop Punk Party",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Punk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a6"
+      },
+      "title": "Sports Car",
+      "artist": "Tate McRae",
+      "duration": 220,
+      "createdAt": {
+        "$date": "2025-04-07T14:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Fast Lane",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a7"
+      },
+      "title": "Ordinary",
+      "artist": "Alex Warren",
+      "duration": 205,
+      "createdAt": {
+        "$date": "2025-04-06T16:25:00.000Z"
+      },
+      "__v": 0,
+      "album": "Everyday Life",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a8"
+      },
+      "title": "Perfect Celebrity",
+      "artist": "Lady Gaga",
+      "duration": 235,
+      "createdAt": {
+        "$date": "2025-04-05T18:40:00.000Z"
+      },
+      "__v": 0,
+      "album": "LG7",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587a9"
+      },
+      "title": "DENIAL IS A RIVER",
+      "artist": "Doechii",
+      "duration": 215,
+      "createdAt": {
+        "$date": "2025-04-04T08:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Breakout",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Hip-Hop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587aa"
+      },
+      "title": "People Watching",
+      "artist": "Sam Fender",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-04-03T10:50:00.000Z"
+      },
+      "__v": 0,
+      "album": "Street Scenes",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587ab"
+      },
+      "title": "Moonlit Glow",
+      "artist": "Sabrina Carpenter",
+      "duration": 225,
+      "createdAt": {
+        "$date": "2025-04-02T12:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Starry Nights",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587ac"
+      },
+      "title": "Electric Vibe",
+      "artist": "Dua Lipa",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-04-01T14:20:00.000Z"
+      },
+      "__v": 0,
+      "album": "Pulse",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Electronic"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587ad"
+      },
+      "title": "Fever Rush",
+      "artist": "Charli XCX",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-03-31T16:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Brat 2",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Hyperpop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587ae"
+      },
+      "title": "Skyfall",
+      "artist": "Harry Styles",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-30T09:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Horizon",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587af"
+      },
+      "title": "Heartbeat",
+      "artist": "Billie Eilish",
+      "duration": 255,
+      "createdAt": {
+        "$date": "2025-03-29T11:55:00.000Z"
+      },
+      "__v": 0,
+      "album": "Pulse of Youth",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b0"
+      },
+      "title": "Shine On",
+      "artist": "Ed Sheeran",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-03-28T13:10:00.000Z"
+      },
+      "__v": 0,
+      "album": "Bright Days",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b1"
+      },
+      "title": "Neon Lights",
+      "artist": "Olivia Rodrigo",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-03-27T15:25:00.000Z"
+      },
+      "__v": 0,
+      "album": "Glow Up",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b2"
+      },
+      "title": "Forever Now",
+      "artist": "Taylor Swift",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-03-26T17:40:00.000Z"
+      },
+      "__v": 0,
+      "album": "Eternal",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Synth-Pop"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b3"
+      },
+      "title": "Dance Alone",
+      "artist": "Katy Perry",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-25T08:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Rhythm",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b4"
+      },
+      "title": "City Dreams",
+      "artist": "Ariana Grande",
+      "duration": 225,
+      "createdAt": {
+        "$date": "2025-03-24T10:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Urban Nights",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b5"
+      },
+      "title": "Sparkle",
+      "artist": "Selena Gomez",
+      "duration": 215,
+      "createdAt": {
+        "$date": "2025-03-23T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Glitter",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b6"
+      },
+      "title": "Over You",
+      "artist": "Justin Bieber",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-03-22T14:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "New Chapter",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b7"
+      },
+      "title": "High Tide",
+      "artist": "Miley Cyrus",
+      "duration": 205,
+      "createdAt": {
+        "$date": "2025-03-21T16:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Ocean Waves",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b8"
+      },
+      "title": "Gravity",
+      "artist": "Shawn Mendes",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-20T18:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Pull Me Down",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587b9"
+      },
+      "title": "Firefly",
+      "artist": "Reneé Rapp",
+      "duration": 220,
+      "createdAt": {
+        "$date": "2025-03-19T08:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Night Lights",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587ba"
+      },
+      "title": "Wanderlust",
+      "artist": "The Weeknd",
+      "duration": 255,
+      "createdAt": {
+        "$date": "2025-03-18T10:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Road to Nowhere",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Synth-Pop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587bb"
+      },
+      "title": "Freefall",
+      "artist": "Zayn",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-03-17T13:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Skybound",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587bc"
+      },
+      "title": "Twilight",
+      "artist": "Lorde",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-03-16T15:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Dusk",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587bd"
+      },
+      "title": "Rush Hour",
+      "artist": "Calvin Harris",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-15T17:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "City Beats",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Electronic"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587be"
+      },
+      "title": "Golden Days",
+      "artist": "Niall Horan",
+      "duration": 225,
+      "createdAt": {
+        "$date": "2025-03-14T08:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Sunlit",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587bf"
+      },
+      "title": "Starstruck",
+      "artist": "PinkPantheress",
+      "duration": 190,
+      "createdAt": {
+        "$date": "2025-03-13T11:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Cosmic Love",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Electronic"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c0"
+      },
+      "title": "Echo",
+      "artist": "Clairo",
+      "duration": 235,
+      "createdAt": {
+        "$date": "2025-03-12T13:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Whispers",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Indie"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c1"
+      },
+      "title": "Blaze",
+      "artist": "Troye Sivan",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-03-11T15:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Inferno",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c2"
+      },
+      "title": "Horizon",
+      "artist": "Maggie Rogers",
+      "duration": 245,
+      "createdAt": {
+        "$date": "2025-03-10T17:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "New Skies",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Folk"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c3"
+      },
+      "title": "Afterglow",
+      "artist": "Coldplay",
+      "duration": 260,
+      "createdAt": {
+        "$date": "2025-03-09T08:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Moon Music",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c4"
+      },
+      "title": "Flashpoint",
+      "artist": "Doja Cat",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-08T10:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Wild Card",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Hip-Hop"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c5"
+      },
+      "title": "Dreamscape",
+      "artist": "Sam Smith",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-03-07T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Visions",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Soul"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c6"
+      },
+      "title": "Ignite",
+      "artist": "Kesha",
+      "duration": 215,
+      "createdAt": {
+        "$date": "2025-03-06T14:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Firestarter",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c7"
+      },
+      "title": "Waves",
+      "artist": "Normani",
+      "duration": 230,
+      "createdAt": {
+        "$date": "2025-03-05T17:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Tidal",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c8"
+      },
+      "title": "Comet",
+      "artist": "Khalid",
+      "duration": 240,
+      "createdAt": {
+        "$date": "2025-03-04T08:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Stargazer",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587c9"
+      },
+      "title": "Prism",
+      "artist": "Ellie Goulding",
+      "duration": 225,
+      "createdAt": {
+        "$date": "2025-03-03T10:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Spectrum",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Electronic"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587ca"
+      },
+      "title": "Flicker",
+      "artist": "Tinashe",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-03-02T12:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Spark",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "R&B"
+      ],
+      "language": "English",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587cb"
+      },
+      "title": "Skyline",
+      "artist": "Meghan Trainor",
+      "duration": 200,
+      "createdAt": {
+        "$date": "2025-03-01T15:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Cityscape",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587cc"
+      },
+      "title": "Radiance",
+      "artist": "Camila Cabello",
+      "duration": 235,
+      "createdAt": {
+        "$date": "2025-02-28T17:15:00.000Z"
+      },
+      "__v": 0,
+      "album": "Shine",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Latin"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587cd"
+      },
+      "title": "Orbit",
+      "artist": "Benson Boone",
+      "duration": 250,
+      "createdAt": {
+        "$date": "2025-02-27T08:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "Cosmic Journey",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Rock"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587ce"
+      },
+      "title": "Vortex",
+      "artist": "Madison Beer",
+      "duration": 220,
+      "createdAt": {
+        "$date": "2025-02-26T10:45:00.000Z"
+      },
+      "__v": 0,
+      "album": "Spin",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Alternative"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587cf"
+      },
+      "title": "Eclipse",
+      "artist": "Ava Max",
+      "duration": 205,
+      "createdAt": {
+        "$date": "2025-02-25T13:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Dark Side",
+      "releaseYear": 2025,
+      "genre": [
+        "Pop",
+        "Dance"
+      ],
+      "language": "English",
+      "isExplicit": false
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587d0"
+      },
+      "title": "Mumbai Hustle",
+      "artist": "Divine",
+      "duration": 210,
+      "createdAt": {
+        "$date": "2025-04-12T10:00:00.000Z"
+      },
+      "__v": 0,
+      "album": "Gully Chronicles",
+      "releaseYear": 2025,
+      "genre": [
+        "Rap",
+        "Hip-Hop"
+      ],
+      "language": "Hindi",
+      "isExplicit": true
+    },
+    {
+      "_id": {
+        "$oid": "67fbf218fad7ab8b2f7587d1"
+      },
+      "title": "City Lights",
+      "artist": "Drake",
+      "duration": 225,
+      "createdAt": {
+        "$date": "2025-04-11T12:30:00.000Z"
+      },
+      "__v": 0,
+      "album": "For All the Dogs",
+      "releaseYear": 2025,
+      "genre": [
+        "Rap",
+        "Trap"
+      ],
+      "language": "English",
+      "isExplicit": true
+    }
+  ]

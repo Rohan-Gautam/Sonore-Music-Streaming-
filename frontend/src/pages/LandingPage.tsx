@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useAudio } from '../context/AudioContext';
-import '../styles/LandingPage.css';
+import './LandingPage.css';
 
 /**
  * Home page component

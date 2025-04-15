@@ -11,11 +11,8 @@
   },
   "dependencies": {
     "axios": "^1.8.4",
-<<<<<<< HEAD
-    "frontend": "file:",
-=======
     "dotenv": "^16.5.0",
->>>>>>> 2e055b241564240591e18a8110d8bc6a9b95b632
+    "frontend": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0"
