@@ -33,6 +33,7 @@ const MediaPlayer: React.FC<MediaPlayerProps> = ({ isAuthenticated }) => {
     const [queue, setQueue] = useState<string[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
 
+
     const fetchSong = async (songId: string) => {
         if (!isAuthenticated) return;
         try {
@@ -163,16 +164,34 @@ const MediaPlayer: React.FC<MediaPlayerProps> = ({ isAuthenticated }) => {
         return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
     };
 
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (
+                e.code === 'Space' &&
+                !(e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement)
+            ) {
+                e.preventDefault(); // Prevent default scrolling behavior
+                if (isAuthenticated && currentSong) {
+                    togglePlayPause();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [isAuthenticated, currentSong, togglePlayPause]);
+
+
     return (
         <div className="media-player">
             <div className="media-player-left">
                 {currentSong && isAuthenticated ? (
                     <img
-                        src={currentSong.imageUrl || '/default-album.png'}
+                        src={currentSong.imageUrl || 'https://i.pinimg.com/736x/d4/65/44/d4654425ee5a2c68532a630e5f4a063c.jpg'}
                         alt={currentSong.title}
                         className="media-player-image"
                         onClick={toggleImageSize}
-                        onError={(e) => { e.currentTarget.src = '/default-album.png'; }}
+                        onError={(e) => { e.currentTarget.src = 'https://i.pinimg.com/736x/d4/65/44/d4654425ee5a2c68532a630e5f4a063c.jpg'; }}
                     />
                 ) : (
                     <img src="https://i.pinimg.com/736x/d4/65/44/d4654425ee5a2c68532a630e5f4a063c.jpg" alt="No song" className="media-player-image" />
@@ -243,5 +262,7 @@ const MediaPlayer: React.FC<MediaPlayerProps> = ({ isAuthenticated }) => {
         </div>
     );
 };
+
+
 
 export default MediaPlayer;

@@ -2,6 +2,19 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import '../styles/PlaylistDetail.css';
+import { MdPlayCircleFilled } from "react-icons/md";
+import {
+    IoArrowBack,
+    IoSearch,
+    IoSave,
+    IoClose,
+    IoPencil,
+    IoAddCircle,
+    IoArrowUp,
+    IoArrowDown,
+    IoTrash,
+    IoCheckmarkCircle
+} from "react-icons/io5";
 
 interface Song {
     _id: string;
@@ -186,7 +199,6 @@ const PlaylistDetail: React.FC = () => {
         if (!playlist || index <= 0) return;
         const updatedSongs = [...playlist.songs];
         [updatedSongs[index], updatedSongs[index - 1]] = [updatedSongs[index - 1], updatedSongs[index]];
-        console.log('New song order:', updatedSongs.map(song => song._id)); // Debug
         setPlaylist({ ...playlist, songs: updatedSongs });
     };
 
@@ -195,7 +207,6 @@ const PlaylistDetail: React.FC = () => {
         if (!playlist || index >= playlist.songs.length - 1) return;
         const updatedSongs = [...playlist.songs];
         [updatedSongs[index], updatedSongs[index + 1]] = [updatedSongs[index + 1], updatedSongs[index]];
-        console.log('New song order:', updatedSongs.map(song => song._id)); // Debug
         setPlaylist({ ...playlist, songs: updatedSongs });
     };
 
@@ -204,7 +215,6 @@ const PlaylistDetail: React.FC = () => {
         if (!playlist) return;
         try {
             const songIds = playlist.songs.map(song => song._id);
-            console.log('Sending songIds:', songIds); // Debug
             await axios.post(
                 `/api/playlists/${playlistId}/reorder`,
                 { songIds },
@@ -213,7 +223,6 @@ const PlaylistDetail: React.FC = () => {
             setMessage('Playlist order saved successfully');
         } catch (error: unknown) {
             if (axios.isAxiosError(error)) {
-                console.log('Reorder error:', error.response?.data); // Debug
                 setMessage(error.response?.data?.message || 'Failed to save playlist order');
             }
         }
@@ -224,7 +233,7 @@ const PlaylistDetail: React.FC = () => {
         window.dispatchEvent(new CustomEvent('playSong', { detail: songId }));
     };
 
-    if (loading) return <div className="playlist-loading">Loading playlist...</div>;
+    if (loading) return <div className="playlist-loading"><IoCheckmarkCircle className="animate-spin" /> Loading playlist...</div>;
     if (error) return <div className="playlist-error">Error: {error}</div>;
     if (!playlist) return <div className="playlist-not-found">Playlist not found</div>;
 
@@ -233,8 +242,10 @@ const PlaylistDetail: React.FC = () => {
             <button
                 className="playlist-back-button"
                 onClick={() => navigate('/home')}
+                title="Back to Home"
             >
-                Back to Home
+                <IoArrowBack size={20} className="mr-2" />
+                Back
             </button>
 
             {editMode ? (
@@ -271,8 +282,14 @@ const PlaylistDetail: React.FC = () => {
                         />
                     </div>
                     <div className="playlist-edit-actions">
-                        <button type="submit" className="playlist-save-button">Save Changes</button>
-                        <button type="button" className="playlist-cancel-button" onClick={() => setEditMode(false)}>Cancel</button>
+                        <button type="submit" className="playlist-save-button">
+                            <IoSave size={20} className="mr-2" />
+                            Save
+                        </button>
+                        <button type="button" className="playlist-cancel-button" onClick={() => setEditMode(false)}>
+                            <IoClose size={20} className="mr-2" />
+                            Cancel
+                        </button>
                     </div>
                 </form>
             ) : (
@@ -293,7 +310,8 @@ const PlaylistDetail: React.FC = () => {
                                 className="playlist-edit-button"
                                 onClick={() => setEditMode(true)}
                             >
-                                Edit Playlist
+                                <IoPencil size={20} className="mr-2" />
+                                Edit
                             </button>
                         </div>
                     </div>
@@ -309,7 +327,10 @@ const PlaylistDetail: React.FC = () => {
                                 placeholder="Search for songs to add..."
                                 className="playlist-search-input"
                             />
-                            <button type="submit" className="playlist-search-button">Search Songs</button>
+                            <button type="submit" className="playlist-search-button">
+                                <IoSearch size={20} className="mr-2" />
+                                Search
+                            </button>
                         </form>
 
                         {searchResults.length > 0 && (
@@ -321,14 +342,27 @@ const PlaylistDetail: React.FC = () => {
                                             key={song._id}
                                             className="playlist-search-result-item"
                                         >
-                                            <div>
+                                            <div className="flex items-center">
                                                 <input
                                                     type="checkbox"
                                                     checked={selectedSongs.includes(song._id)}
                                                     onChange={() => toggleSongSelection(song._id)}
                                                     className="playlist-search-checkbox"
                                                 />
-                                                <strong onClick={() => playSong(song._id)} className="playlist-search-song-title">{song.title}</strong> by {song.artist}
+                                                <div className="flex items-center">
+                                                    <MdPlayCircleFilled
+                                                        onClick={() => playSong(song._id)}
+                                                        className="playlist-search-song-title mr-2 cursor-pointer text-green-500 hover:scale-110 transition-transform"
+                                                        size={24}
+                                                    />
+                                                    <span
+                                                        onClick={() => playSong(song._id)}
+                                                        className="playlist-search-song-title cursor-pointer hover:text-green-500 transition-colors"
+                                                    >
+                                                        {song.title}
+                                                    </span>
+                                                    <span className="ml-2 text-gray-400">by {song.artist}</span>
+                                                </div>
                                             </div>
                                         </li>
                                     ))}
@@ -338,7 +372,8 @@ const PlaylistDetail: React.FC = () => {
                                     disabled={selectedSongs.length === 0}
                                     className="playlist-add-songs-button"
                                 >
-                                    Add Selected Songs
+                                    <IoAddCircle size={20} className="mr-2" />
+                                    Add Songs
                                 </button>
                             </div>
                         )}
@@ -354,28 +389,51 @@ const PlaylistDetail: React.FC = () => {
                                         className="playlist-song-item"
                                     >
                                         <div className="playlist-song-info">
-                                            <strong onClick={() => playSong(song._id)} className="playlist-song-title">{song.title}</strong> by {song.artist}
+                                            <MdPlayCircleFilled
+                                                onClick={() => playSong(song._id)}
+                                                style={{
+                                                    color: '#1DB954',
+                                                    fontSize: '32px',
+                                                    marginRight: '10px',
+                                                    cursor: 'pointer',
+                                                    transition: 'transform 0.2s ease-in-out',
+                                                }}
+                                                onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
+                                                onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                            />
+                                            <div>
+                                                <strong
+                                                    onClick={() => playSong(song._id)}
+                                                    className="playlist-song-title cursor-pointer hover:text-green-500 transition-colors"
+                                                >
+                                                    {song.title}
+                                                </strong>
+                                                <span className="text-gray-400 ml-2">by {song.artist}</span>
+                                            </div>
                                         </div>
                                         <div className="playlist-song-actions">
                                             <button
                                                 onClick={() => moveSongUp(index)}
                                                 disabled={index === 0}
                                                 className="playlist-move-up-button"
+                                                title="Move Up"
                                             >
-                                                ↑
+                                                <IoArrowUp size={18} />
                                             </button>
                                             <button
                                                 onClick={() => moveSongDown(index)}
                                                 disabled={index === playlist.songs.length - 1}
                                                 className="playlist-move-down-button"
+                                                title="Move Down"
                                             >
-                                                ↓
+                                                <IoArrowDown size={18} />
                                             </button>
                                             <button
                                                 onClick={() => handleRemoveSong(song._id)}
                                                 className="playlist-remove-button"
+                                                title="Remove Song"
                                             >
-                                                Remove
+                                                <IoTrash size={18} />
                                             </button>
                                         </div>
                                     </li>
@@ -385,7 +443,8 @@ const PlaylistDetail: React.FC = () => {
                                 onClick={saveReorderedPlaylist}
                                 className="playlist-save-order-button"
                             >
-                                Save Playlist Order
+                                <IoSave size={20} className="mr-2" />
+                                Save Order
                             </button>
                         </div>
                     ) : (

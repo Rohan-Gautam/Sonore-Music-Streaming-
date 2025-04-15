@@ -10,10 +10,18 @@ h1 {
   color: #6a1b9a;
 }
 
+h3 {
+  color: #ffffff;
+}
+
+span{
+  color: white;
+}
+
 p {
   font-size: 1.3rem;
   margin-top: 10px;
-  color: #555;
+  color: #ffffff;
 }
 
 .buttons {
