@@ -100,7 +100,7 @@ app.post('/api/playlists/createPlaylist', isAuthenticated, createPlaylist);
 app.post('/api/playlists/addSongsToPlaylist', isAuthenticated, addSongsToPlaylist);
 app.post('/api/playlists/removeSongsFromPlaylist', isAuthenticated, removeSongsFromPlaylist);
 app.delete('/api/playlists/deletePlaylist/:playlistId', isAuthenticated, deletePlaylist);
-app.put('/api/playlists/updatePlaylist', isAuthenticated, updatePlaylist);
+app.put('/api/playlists/updatePlaylist/:playlistId', isAuthenticated, updatePlaylist);
 app.post('/api/playlists/:playlistId/reorder', isAuthenticated, reorderPlaylist);
 
 //Public routes
