@@ -17,7 +17,7 @@ function Login() {
         const payload = { email, password };
         console.log('Submitting:', payload);
         try {
-            const response = await axios.post(`${process.env.VITE_BACKEND_URL}auth/login`, payload, {
+            const response = await axios.post('/api/auth/login', payload, {
                 headers: { 'Content-Type': 'application/json' },
                 withCredentials: true, // Send/receive cookies
             });
