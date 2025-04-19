@@ -15,7 +15,7 @@ const Register: React.FC = () => {
         const payload = { name, username, email, password };
         console.log('Submitting:', payload);
         try {
-            const response = await axios.post('/api/auth/register', payload, {
+            const response = await axios.post(`${process.env.VITE_BACKEND_URL}/auth/register`, payload, {
                 headers: { 'Content-Type': 'application/json' },
                 withCredentials: true,
             });
