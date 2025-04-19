@@ -129,17 +129,7 @@ app.get('/api/home', isAuthenticated, (req: Request, res: Response) => {
     res.json({ message: 'Welcome to your home page', user: req.user });
 });
 
-// Serve Public Frontend Routes
-const publicRoutes = ['/', '/login', '/register'];
-app.get(publicRoutes, (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
-});
 
-// Protect all other frontend routes with authentication
-app.get('*', isAuthenticated, (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
-    // Note: Ensure API routes (e.g., /api/*) are defined above to avoid being caught here
-});
 /**
  * Start the server
  * Connects to MongoDB and starts listening on PORT
