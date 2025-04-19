@@ -54,7 +54,6 @@ app.use(
 );
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET || 'your_cookie_secret'));
-app.use(express.static(path.join(__dirname, '../../frontend/dist')));
 
 
 /**
